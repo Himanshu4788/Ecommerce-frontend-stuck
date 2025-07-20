@@ -1,0 +1,81 @@
+.nav-header {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+  filter: invert(1); /* ensure icon is visible */
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+  background: #bab7b7f2;
+  color: #1e1d1d;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+  z-index: 20;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 25px;
+  cursor: pointer;
+  filter: invert(0); /* ensure visible on light bg */
+}
+
+.logo {
+  /* font-family: 'Comic Sans MS', cursive, sans-serif; */
+  font-size: 24px;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-links li:hover {
+  color: crimson;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons img {
+  width: 20px;
+  filter: invert(1); /* make icons visible on light bg */
+  cursor: pointer;
+}
